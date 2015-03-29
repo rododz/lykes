@@ -1,1 +1,7 @@
+<% if current_user %>
+Login works. 
+
+You are logged in as : <%= current_user.email %>
+<% else %>
 <%= link_to 'Facebook connect', '/users/auth/facebook' %>
+<% end %>
